@@ -28,6 +28,6 @@ basic.forever(function () {
         basic.pause(500)
     }
     if (Math.sqrt(num) == Math.round(Math.sqrt(num))) {
-    	
+        basic.pause(2000)
     }
 })
