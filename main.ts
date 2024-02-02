@@ -16,7 +16,7 @@ basic.forever(function () {
         )
         sorszam += 1
         num1 += 1
-        basic.pause(500)
+        basic.pause(50)
     }
     if (1 == start) {
         datalogger.log(
@@ -25,9 +25,14 @@ basic.forever(function () {
         )
         sorszam += 1
         num += 2
-        basic.pause(500)
+        basic.pause(50)
     }
     if (Math.sqrt(num) == Math.round(Math.sqrt(num))) {
-        basic.pause(2000)
+        datalogger.log(
+        datalogger.createCV("1", num),
+        datalogger.createCV("2", num1 * num1),
+        datalogger.createCV("3", (num1 - 1) * (num1 - 1))
+        )
+        basic.pause(1000)
     }
 })
